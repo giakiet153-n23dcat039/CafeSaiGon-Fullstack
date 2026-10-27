@@ -1,0 +1,44 @@
+@baseUrl = http://localhost:5000
+
+### GET all
+GET {{baseUrl}}/api/products
+
+### GET by id
+GET {{baseUrl}}/api/products/1
+
+### POST create
+POST {{baseUrl}}/api/products
+Content-Type: application/json
+
+{
+  "name": "Cà phê thử nghiệm",
+  "category": "Cà phê rang",
+  "emoji": "☕",
+  "weight": "250g",
+  "price": 99000,
+  "roast": "Rang vừa",
+  "flavor": "Thơm dịu",
+  "desc": "Sản phẩm phục vụ demo CRUD",
+  "bestFor": "Pha phin",
+  "imageName": "blend-sai-gon"
+}
+
+### PUT (thay 7 bằng ID vừa tạo)
+PUT {{baseUrl}}/api/products/7
+Content-Type: application/json
+
+{
+  "name": "Cà phê thử nghiệm - đã sửa",
+  "category": "Cà phê rang",
+  "emoji": "☕",
+  "weight": "500g",
+  "price": 119000,
+  "roast": "Rang đậm",
+  "flavor": "Đậm vị",
+  "desc": "Đã thay đổi bằng PUT",
+  "bestFor": "Pha phin",
+  "imageName": "robusta-bmt"
+}
+
+### DELETE (thay 7 bằng ID vừa tạo)
+DELETE {{baseUrl}}/api/products/7

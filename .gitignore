@@ -1,0 +1,39 @@
+node_modules
+dist
+.DS_Store
+
+# API practice
+_backup_truoc_API_*/
+backend/**/bin/
+backend/**/obj/
+backend/**/*.db
+backend/**/*.db-shm
+backend/**/*.db-wal
+.env
+
+# Node.js / React
+node_modules/
+dist/
+
+# ASP.NET Core
+**/bin/
+**/obj/
+.vs/
+
+# SQLite
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# Secrets
+.env
+.env.*
+!.env.example
+**/secrets.json
+**/appsettings.Development.json
+**/appsettings.*.local.json
+
+# Logs
+*.log

@@ -1,0 +1,20 @@
+.admin-products h2 { margin: 0 0 16px; font-size: 23px; }
+.admin-title { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 15px; }
+.admin-title .lead { margin-bottom: 5px; }
+.admin-panel { background: #fff; border: 1px solid #e0d6d1; padding: 24px; border-radius: 12px; margin: 22px 0; box-shadow: 0 4px 18px rgba(62,39,35,.04); }
+.admin-form-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(225px, 1fr)); gap: 16px; }
+.admin-form-grid label, .admin-full { display: grid; gap: 5px; font-weight: 600; color: #5d4037; }
+.admin-form-grid input, .admin-form-grid select, .admin-full textarea { padding: 11px; font: inherit; border: 1px solid #cbb9b0; border-radius: 6px; width: 100%; background: white; color: #333; }
+.admin-full { margin-top: 16px; }
+.admin-actions, .admin-row-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.admin-actions { margin-top: 16px; }
+.admin-secondary, .admin-edit, .admin-delete { padding: 8px 14px; border-radius: 6px; cursor: pointer; border: 1px solid #b3aaa6; background: white; color: #3e2723; font: inherit; }
+.admin-delete { border-color: #b42318; color: #b42318; }
+.admin-edit:hover { background: #efebe9; }
+.admin-delete:hover { background: #fef3f2; }
+.admin-products button:disabled { opacity: .55; cursor: not-allowed; }
+.api-alert, .api-success, .admin-warning { padding: 12px 16px; margin: 14px 0; border-radius: 7px; }
+.api-alert { color: #912018; background: #fff1f0; border: 1px solid #f8c8c3; }
+.api-success { color: #116329; background: #edfff1; border: 1px solid #b7e4c7; }
+.admin-warning { color: #6b4500; background: #fff8e1; border: 1px solid #ffe082; }
+@media(max-width:600px) { .admin-panel { padding: 14px; } .admin-products th, .admin-products td { padding: 9px; font-size: 13px; } }
