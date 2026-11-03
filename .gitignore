@@ -1,39 +1,40 @@
-node_modules
-dist
-.DS_Store
 
-# API practice
-_backup_truoc_API_*/
-backend/**/bin/
-backend/**/obj/
-backend/**/*.db
-backend/**/*.db-shm
-backend/**/*.db-wal
-.env
-
-# Node.js / React
+# React / Node
 node_modules/
 dist/
+build/
+.vite/
+
+# Environment variables
+.env
+.env.*
+!.env.example
 
 # ASP.NET Core
 **/bin/
 **/obj/
 .vs/
+*.user
+*.suo
 
-# SQLite
+# SQLite database
 *.db
 *.db-shm
 *.db-wal
+*.db-journal
 *.sqlite
 *.sqlite3
 
-# Secrets
-.env
-.env.*
-!.env.example
-**/secrets.json
+# Private configuration
 **/appsettings.Development.json
-**/appsettings.*.local.json
+**/secrets.json
 
-# Logs
+# Logs and backups
+logs/
 *.log
+*.bak
+*.backup
+backups/
+
+# Temporary Admin reset tools
+01_SUA_ADMIN_VA_SMTP.cmd
